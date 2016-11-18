@@ -36,7 +36,7 @@ module.exports = class Router extends Backbone.Router
     ###
     auth: (path, options) ->
         # Load app stylesheet
-        AppStyles = require '../styles/app.styl'
+        AppStyles = require '../styles/auth.styl'
 
         AuthView  = require '../views/auth'
         AuthModel = require '../states/auth'

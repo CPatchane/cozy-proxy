@@ -33,7 +33,7 @@ var loaders = [
         loader: 'coffee'
     },
     {
-        test: /app\.styl$/,
+        test: /auth\.styl$/,
         loader: CSSApp.extract('style', cssOptions + '!stylus')
     },
     {
