@@ -1,7 +1,9 @@
-extends view_base
+extends _view_base
+
+block header
+    h1= t(prefix + ' welcome', {username: username})
 
 block region
-    h1= t(prefix + ' welcome', {username: username})
     p.help#login-password-tip= t(prefix + ' enter your password', {username: username})
     label.with-input(for="#{prefix}-password", aria-describedby="#{prefix}-password-tip")
         span= t(prefix + ' password')
